@@ -1,0 +1,223 @@
+Last login: Mon Nov 21 11:57:55 on ttys000
+(base) esraaahmed@Esraas-MacBook-Air ~ % cd
+(base) esraaahmed@Esraas-MacBook-Air ~ % cd Documents
+(base) esraaahmed@Esraas-MacBook-Air Documents % git clone https://github.com/esraasalahahmed/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 40 (delta 14), reused 11 (delta 11), pack-reused 17
+Receiving objects: 100% (40/40), 11.61 KiB | 2.32 MiB/s, done.
+Resolving deltas: 100% (14/14), done.
+(base) esraaahmed@Esraas-MacBook-Air Documents % ls
+01_Data Analytics	family
+My Tableau Repository	lab-bash
+(base) esraaahmed@Esraas-MacBook-Air Documents % cd lab-bash
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % echo Hello!
+Hello!
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % Hello World!
+zsh: command not found: Hello
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % echo Hello World!
+Hello World!
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % mkdir new-folder
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % rmdir new-folder
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cp sed.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file ... target_directory
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cd lorem-copy
+(base) esraaahmed@Esraas-MacBook-Air lorem-copy % cp sed.txt lorem-copy
+cp: sed.txt: No such file or directory
+(base) esraaahmed@Esraas-MacBook-Air lorem-copy % cd
+(base) esraaahmed@Esraas-MacBook-Air ~ % cd lab-bash
+cd: no such file or directory: lab-bash
+(base) esraaahmed@Esraas-MacBook-Air ~ % cd lab-bash
+cd: no such file or directory: lab-bash
+(base) esraaahmed@Esraas-MacBook-Air ~ % cd lorem-copy
+cd: no such file or directory: lorem-copy
+(base) esraaahmed@Esraas-MacBook-Air ~ % ls
+Conditional statements Exercise-solutions.ipynb
+Desktop
+Dictionaries Exercise-solutions.ipynb
+Documents
+Downloads
+Function Exercise-solutions .ipynb
+Iterations Exercise-solutions.ipynb
+Library
+List Exercise-solutions.ipynb
+Measures of central tendency Exercise-solutions.ipynb
+Measures of dispersion Exercise-solutions.ipynb
+Movies
+Music
+Pictures
+Pseudocode Exercise-solutions.ipynb
+Public
+Untitled.ipynb
+Untitled1.ipynb
+Untitled2.ipynb
+Variables&Operators Exercise-solutions .ipynb
+copied-files
+copied.txt
+hello.txt
+my_files
+opt
+temp
+untitled.txt
+(base) esraaahmed@Esraas-MacBook-Air ~ % ls
+Conditional statements Exercise-solutions.ipynb
+Desktop
+Dictionaries Exercise-solutions.ipynb
+Documents
+Downloads
+Function Exercise-solutions .ipynb
+Iterations Exercise-solutions.ipynb
+Library
+List Exercise-solutions.ipynb
+Measures of central tendency Exercise-solutions.ipynb
+Measures of dispersion Exercise-solutions.ipynb
+Movies
+Music
+Pictures
+Pseudocode Exercise-solutions.ipynb
+Public
+Untitled.ipynb
+Untitled1.ipynb
+Untitled2.ipynb
+Variables&Operators Exercise-solutions .ipynb
+copied-files
+copied.txt
+hello.txt
+my_files
+opt
+temp
+untitled.txt
+(base) esraaahmed@Esraas-MacBook-Air ~ % cd Documents
+(base) esraaahmed@Esraas-MacBook-Air Documents % cd ..
+(base) esraaahmed@Esraas-MacBook-Air ~ % cd Documents
+(base) esraaahmed@Esraas-MacBook-Air Documents % ls
+01_Data Analytics	family
+My Tableau Repository	lab-bash
+(base) esraaahmed@Esraas-MacBook-Air Documents % cd lab-bash
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cd lorem
+(base) esraaahmed@Esraas-MacBook-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) esraaahmed@Esraas-MacBook-Air lorem % cp sed.txt ../lorem-copy
+(base) esraaahmed@Esraas-MacBook-Air lorem % ls ../lorem-copy
+dummy_file.txt	sed.txt
+(base) esraaahmed@Esraas-MacBook-Air lorem % cd ..
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls lorem-copy
+dummy_file.txt	sed.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cd lorem
+(base) esraaahmed@Esraas-MacBook-Air lorem % ls
+at.txt		at.txte		lorem.txt	sed.txt
+(base) esraaahmed@Esraas-MacBook-Air lorem % cd ..
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cp at.txt; lorem.txt lorem-copy
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file ... target_directory
+zsh: command not found: lorem.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cp at.txt lorem-copy; lorem.txt lorem-copy
+cp: at.txt: No such file or directory
+zsh: command not found: lorem.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cp at.txt lorem-copy; cp lorem.txt lorem-co
+py
+cp: at.txt: No such file or directory
+cp: lorem.txt: No such file or directory
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cp at.txt lorem-copy/; cp lorem.txt lorem-copy/
+cp: at.txt: No such file or directory
+cp: lorem.txt: No such file or directory
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cp lorem/at.txt lorem-copy/; cp lorem/lorem
+.txt lorem-copy/
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls lorem-copy
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % less lorem/sed.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % sed -n 1,3p lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % cat -b lorem-copy/sed.txt
+     1	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+     2	totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+     3	Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+     4	sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+     5	Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+     6	sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+     7	Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+     8	nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+     9	vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % head -3 lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % tail -3 lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % echo "Homo homini lupus" >> lorem-copy/sed.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % tail -1 lorem-copy/sed.txt
+Homo homini lupus
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % sed ,s/ et/ET/, lorem/at.txt
+sed: 1: ",s/": invalid command code ,
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % sed 's/ et/ET/' lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % whoami
+esraaahmed
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % pwd
+/Users/esraaahmed/Documents/lab-bash
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls -.txt
+ls: invalid option -- .
+usage: ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format] [file ...]
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls -.txt lorem/
+ls: invalid option -- .
+usage: ls [-@ABCFGHILOPRSTUWabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format] [file ...]
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls *.txt lorem
+zsh: no matches found: *.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls *.txt lorem/
+zsh: no matches found: *.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls *.txt lorem
+zsh: no matches found: *.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls lorem
+at.txt		at.txte		lorem.txt	sed.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls *.txt lorem
+zsh: no matches found: *.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls * .txt lorem
+ls: .txt: No such file or directory
+readme.md
+
+exercices:
+
+inputs:
+
+lorem:
+at.txt		at.txte		lorem.txt	sed.txt
+
+lorem:
+at.txt		at.txte		lorem.txt	sed.txt
+
+lorem-copy:
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+
+outputs:
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls
+exercices	inputs		lorem		lorem-copy	outputs		readme.md
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls *lorem* ¡
+ls: ¡: No such file or directory
+lorem:
+at.txt		at.txte		lorem.txt	sed.txt
+
+lorem-copy:
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % |wc -l
+zsh: parse error near `|'
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % | wc -l
+zsh: parse error near `|'
+(base) esraaahmed@Esraas-MacBook-Air lab-bash % ls *lorem* | wc -l
+      11
+(base) esraaahmed@Esraas-MacBook-Air lab-bash %
